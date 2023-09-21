@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Quiz</title>
-</head>
-<body>
+  </head>
+
+  <body>
+
+    <!--Div that will contain all content-->
+    <div class="container">
+
+        <h1 class="heading">
+            <img class="logo-img" src="assets/images/quiz-logo.webp" alt="Logo image." />
+        </h1>
+
+        <!--Div for question text area-->
+        <div class="question-content">
+            <div id="question-text"></div>
+            <div>
+                <button class="button-opt" id="true">True</button>
+                <button class="button-opt" id="false">False</button>
+            </div>
+        </div>
+
+        <!--Div for control buttons-->
+        <div>
+            <button id="previous">Previous Question</button>
+            <button id="next">Next Question</button>
+            <button onclick="checkAnswer()" id="submit">Submit Answers</button>
+        </div>
+
+        <!--Div for score area-->
+        <div class="score">
+            <span id="correct-score">0</span>
+            <span id="incorrect-score">/10</span>
+        </div>
+        
+    </div>
+
+
+    <!--Link to Fontawesome-->
+    <script src="https://kit.fontawesome.com/9a36972be8.js" 
+    crossorigin="anonymous"></script>
+    <!--Link to Javascript file-->
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
