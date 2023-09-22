@@ -1,98 +1,177 @@
-// Variables to represent buttons and content areas
-let trueButton = document.getElementById('true');
-let falseButton = document.getElementById('false');
-let previousButton = document.getElementById('previous');
-let nextButton = document.getElementById('next');
-let submitButton = document.getElementById('submit');
-let correctScore = document.getElementById('correct-score');
-let incorrectScore = document.getElementById('incorrect-score');
-let questionText = document.getElementById('question-text');
-
-// Onclick events for buttons
-previousButton.addEventListener('click', previous);
-nextButton.addEventListener('click', next);
-submitButton.addEventListener('click', submit);
-
 // Questions that will be asked
-let questions = [
+let askQuestions = [
     {
         question: 'question 1',
-        answers: [
-            { option: 'True', answer: true },
-            { option: 'False', answer: false }
+        answer: [
+            { option: 'option 1', isCorrect: true },
+            { option: 'option 2', isCorrect: false },
+            { option: 'option 3', isCorrect: false },
+            { option: 'option 4', isCorrect: false }
         ]
     },
     {
         question: 'question 2',
-        answers: [
-            {option: 'True', answer:true},
-            {option: 'False', answer:false}
+        answer: [
+            { option: 'option 1', isCorrect: false },
+            { option: 'option 2', isCorrect: false },
+            { option: 'option 3', isCorrect: true },
+            { option: 'option 4', isCorrect: false }
         ]
     },
     {
         question: 'question 3',
-        answers: [
-            { option: 'True', answer: true },
-            { option: 'False', answer: false }
+        answer: [
+            { option: 'option 1', isCorrect: false },
+            { option: 'option 2', isCorrect: false },
+            { option: 'option 3', isCorrect: false },
+            { option: 'option 4', isCorrect: true }
         ]
     },
     {
         question: 'question 4',
-        answers: [
-            { option: 'True', answer: true },
-            { option: 'False', answer: false }
+        answer: [
+            { option: 'option 1', isCorrect: false },
+            { option: 'option 2', isCorrect: true },
+            { option: 'option 3', isCorrect: false },
+            { option: 'option 4', isCorrect: false }
         ]
     },
     {
         question: 'question 5',
-        answers: [
-            { option: 'True', answer: true },
-            { option: 'False', answer: false }
+        answer: [
+            { option: 'option 1', isCorrect: false },
+            { option: 'option 2', isCorrect: false },
+            { option: 'option 3', isCorrect: false },
+            { option: 'option 4', isCorrect: true }
         ]
     },
     {
         question: 'question 6',
-        answers: [
-            { option: 'True', answer: true },
-            { option: 'False', answer: false }
+        answer: [
+            { option: 'option 1', isCorrect: false },
+            { option: 'option 2', isCorrect: false },
+            { option: 'option 3', isCorrect: true },
+            { option: 'option 4', isCorrect: false }
         ]
     },
     {
         question: 'question 7',
-        answers: [
-            { option: 'True', answer: true },
-            { option: 'False', answer: false }
+        answer: [
+            { option: 'option 1', isCorrect: false },
+            { option: 'option 2', isCorrect: false },
+            { option: 'option 3', isCorrect: false },
+            { option: 'option 4', isCorrect: true }
         ]
     },
     {
         question: 'question 8',
-        answers: [
-            { option: 'True', answer: true },
-            { option: 'False', answer: false }
+        answer: [
+            { option: 'option 1', isCorrect: true },
+            { option: 'option 2', isCorrect: false },
+            { option: 'option 3', isCorrect: false },
+            { option: 'option 4', isCorrect: false }
         ]
     },
     {
         question: 'question 9',
-        answers: [
-            { option: 'True', answer: true },
-            { option: 'False', answer: false }
+        answer: [
+            { option: 'option 1', isCorrect: false },
+            { option: 'option 2', isCorrect: true },
+            { option: 'option 3', isCorrect: false },
+            { option: 'option 4', isCorrect: false }
         ]
     },
     {
         question: 'question 10',
-        answers: [
-            { option: 'True', answer: true },
-            { option: 'False', answer: false }
+        answer: [
+            {option: 'option 1', isCorrect: false},
+            {option: 'option 2', isCorrect: false},
+            {option: 'option 3', isCorrect: false},
+            {option: 'option 4', isCorrect: true} 
         ]
-    }
+    },
 ]
+
+// Variables to represent buttons and content areas
+let previousButton = document.getElementById('previous');
+let nextButton = document.getElementById('next');
+let submitButton = document.getElementById('submit');
+let userScore = document.getElementById('score');
+let questionContent = document.getElementsByClassName('question-content');
+let questionText = document.getElementById('question-text');
+let optionsArea = document.getElementById('opt');
+
+// Onclick events for buttons
+previousButton.addEventListener('click', previousQuestion);
+nextButton.addEventListener('click', nextQuestion);
+submitButton.addEventListener('click', checkAnswers);
 
 // Variables for questions and score
 let currentQuestion = 0;
 let score = 0;
 
 // Function to load the questions
-function quizQuestions() {
-    questionText.innerHTML = questions[currentQuestion].question;
-    trueButton.innerHTML = questions[currentQuestion].answers[0].option;
+function loadQuiz() {
+    questionText.innerHTML = askQuestions[currentQuestion].question;
+    optionsArea.innerHTML = '';
+
+    for (let i = 0; i < askQuestions[currentQuestion].answer.length; i++) {
+        let divChoices = document.createElement('div');
+        divChoices.className = 'div-choices';
+        let inputChoices = document.createElement('input');
+        inputChoices.className = 'input-choices';
+        let labelChoices = document.createElement('label');
+        labelChoices.className = 'label-choices';
+
+        inputChoices.type = 'radio';
+        inputChoices.name = 'answer';
+        inputChoices.value = i;
+
+        labelChoices.textContent = askQuestions[currentQuestion].answer[i].option;
+
+        divChoices.appendChild(inputChoices);
+        divChoices.appendChild(labelChoices);
+
+        optionsArea.appendChild(divChoices);
+    }
 }
+
+function loadScore() {
+    userScore.textContent =
+        'Well done on completing this quiz! Your score is ${score} out of ${askQuestions.length}';
+}
+
+function previousQuestion() {
+    if (currentQuestion > 0) {
+        currentQuestion--;
+        loadQuiz();
+    }
+}
+
+function nextQuestion() {
+    if (currentQuestion < askQuestions.length -1) {
+        currentQuestion++;
+        loadQuiz();
+    } else {
+        loadScore();
+    }
+}
+
+function checkAnswers() {
+    let selectedAnswer = parseInt(document.querySelector('input[name="answer"]:checked').value);
+
+    if (!selectedAnswer){
+        alert('Please select an answer');
+        return;
+    }
+
+    if (askQuestions[currentQuestion].answer[selectedAnswer].isCorrect) {
+        score++;
+        nextQuestion();
+    } else {
+        nextQuestion();
+    }
+}
+
+// Load the first question when the page loads
+loadQuiz();
