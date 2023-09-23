@@ -97,14 +97,8 @@ let previousButton = document.getElementById('previous');
 let nextButton = document.getElementById('next');
 let submitButton = document.getElementById('submit');
 let userScore = document.getElementById('score');
-let questionContent = document.getElementsByClassName('question-content');
 let questionText = document.getElementById('question-text');
 let optionsArea = document.getElementById('opt');
-
-// Onclick events for buttons
-previousButton.addEventListener('click', previousQuestion);
-nextButton.addEventListener('click', nextQuestion);
-submitButton.addEventListener('click', checkAnswers);
 
 // Variables for questions and score
 let currentQuestion = 0;
@@ -118,14 +112,17 @@ function loadQuiz() {
     for (let i = 0; i < askQuestions[currentQuestion].answer.length; i++) {
         let divChoices = document.createElement('div');
         divChoices.className = 'div-choices';
+
         let inputChoices = document.createElement('input');
         inputChoices.className = 'input-choices';
-        let labelChoices = document.createElement('label');
-        labelChoices.className = 'label-choices';
-
         inputChoices.type = 'radio';
         inputChoices.name = 'answer';
         inputChoices.value = i;
+        inputChoices.id = 'option' + (i + 1); // Assign unique IDs to the input fields
+
+        let labelChoices = document.createElement('label');
+        labelChoices.className = 'label-choices';
+        labelChoices.setAttribute('for', 'option' + (i + 1)); // Set the 'for' attribute
 
         labelChoices.textContent = askQuestions[currentQuestion].answer[i].option;
 
@@ -138,7 +135,7 @@ function loadQuiz() {
 
 function loadScore() {
     userScore.textContent =
-        'Well done on completing this quiz! Your score is ${score} out of ${askQuestions.length}';
+        `Well done on completing this quiz! Your score is ${score} out of ${askQuestions.length}!`;
 }
 
 function previousQuestion() {
@@ -148,8 +145,8 @@ function previousQuestion() {
     }
 }
 
-function nextQuestion() {
-    if (currentQuestion < askQuestions.length -1) {
+function displayNextQuestion() {
+    if (currentQuestion < askQuestions.length - 1) {
         currentQuestion++;
         loadQuiz();
     } else {
@@ -157,21 +154,40 @@ function nextQuestion() {
     }
 }
 
-function checkAnswers() {
-    let selectedAnswer = parseInt(document.querySelector('input[name="answer"]:checked').value);
+function nextQuestion() {
+    let selectedRadio = document.querySelector('input[name="answer"]:checked');
+    let selectedAnswer = parseInt(selectedRadio.value);
+    handleAnswer(selectedAnswer);
+    displayNextQuestion();
+}
 
-    if (!selectedAnswer){
-        alert('Please select an answer');
-        return;
-    }
-
+function handleAnswer(selectedAnswer) {
     if (askQuestions[currentQuestion].answer[selectedAnswer].isCorrect) {
         score++;
-        nextQuestion();
-    } else {
-        nextQuestion();
     }
 }
+
+function checkAnswers() {
+    let selectedRadio = document.querySelector('input[name="answer"]:checked');
+    
+    if (selectedRadio) {
+        let selectedAnswer = parseInt(selectedRadio.value);
+    
+        if (askQuestions[currentQuestion].answer[selectedAnswer].isCorrect) {
+            score++;
+        } 
+
+        nextQuestion();
+    } else {
+        alert('Please select an answer');
+    }
+
+}
+
+// Onclick events for buttons
+previousButton.addEventListener('click', previousQuestion);
+submitButton.addEventListener('click', checkAnswers);
+nextButton.addEventListener('click', nextQuestion);
 
 // Load the first question when the page loads
 loadQuiz();
