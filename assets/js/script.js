@@ -1,93 +1,93 @@
 // Questions that will be asked
 let askQuestions = [
     {
-        question: 'question 1',
+        question: 'Which famous river runs through Dublin?',
         answer: [
-            { option: 'option 1', isCorrect: true },
-            { option: 'option 2', isCorrect: false },
-            { option: 'option 3', isCorrect: false },
-            { option: 'option 4', isCorrect: false }
+            { option: 'River Liffey', isCorrect: true },
+            { option: 'River Boyne', isCorrect: false },
+            { option: 'River Barrow', isCorrect: false },
+            { option: 'River Nore', isCorrect: false }
         ]
     },
     {
-        question: 'question 2',
+        question: 'What is the national symbol of Ireland?',
         answer: [
-            { option: 'option 1', isCorrect: false },
-            { option: 'option 2', isCorrect: false },
-            { option: 'option 3', isCorrect: true },
-            { option: 'option 4', isCorrect: false }
+            { option: 'Pint of Guiness', isCorrect: false },
+            { option: 'Shamrock', isCorrect: false },
+            { option: 'The Harp', isCorrect: true },
+            { option: 'Trinity Knot', isCorrect: false }
         ]
     },
     {
-        question: 'question 3',
+        question: "In which county is the Giant's Causeway located?",
         answer: [
-            { option: 'option 1', isCorrect: false },
-            { option: 'option 2', isCorrect: false },
-            { option: 'option 3', isCorrect: false },
-            { option: 'option 4', isCorrect: true }
+            { option: 'Tyrone', isCorrect: false },
+            { option: 'Armagh', isCorrect: false },
+            { option: 'Derry', isCorrect: false },
+            { option: 'Antrim', isCorrect: true }
         ]
     },
     {
-        question: 'question 4',
+        question: 'What is the largest county in Ireland?',
         answer: [
-            { option: 'option 1', isCorrect: false },
-            { option: 'option 2', isCorrect: true },
-            { option: 'option 3', isCorrect: false },
-            { option: 'option 4', isCorrect: false }
+            { option: 'Dublin', isCorrect: false },
+            { option: 'Cork', isCorrect: true },
+            { option: 'Galway', isCorrect: false },
+            { option: 'Mayo', isCorrect: false }
         ]
     },
     {
-        question: 'question 5',
+        question: 'What is the highest mountain in Ireland?',
         answer: [
-            { option: 'option 1', isCorrect: false },
-            { option: 'option 2', isCorrect: false },
-            { option: 'option 3', isCorrect: false },
-            { option: 'option 4', isCorrect: true }
+            { option: 'Croagh Patrick', isCorrect: false },
+            { option: 'Knockmealdown', isCorrect: false },
+            { option: 'Brandon Peak', isCorrect: false },
+            { option: 'Carrauntoohil', isCorrect: true }
         ]
     },
     {
-        question: 'question 6',
+        question: 'What is the smallest county in Ireland',
         answer: [
-            { option: 'option 1', isCorrect: false },
-            { option: 'option 2', isCorrect: false },
-            { option: 'option 3', isCorrect: true },
-            { option: 'option 4', isCorrect: false }
+            { option: 'Offaly', isCorrect: false },
+            { option: 'Carlow', isCorrect: false },
+            { option: 'Louth', isCorrect: true },
+            { option: 'Waterford', isCorrect: false }
         ]
     },
     {
-        question: 'question 7',
+        question: 'How many counties does County Tipperary border?',
         answer: [
-            { option: 'option 1', isCorrect: false },
-            { option: 'option 2', isCorrect: false },
-            { option: 'option 3', isCorrect: false },
-            { option: 'option 4', isCorrect: true }
+            { option: 'Nine', isCorrect: false },
+            { option: 'Seven', isCorrect: false },
+            { option: 'Five', isCorrect: false },
+            { option: 'Eight', isCorrect: true }
         ]
     },
     {
-        question: 'question 8',
+        question: 'In Connacht, which county does not have a coastline?',
         answer: [
-            { option: 'option 1', isCorrect: true },
-            { option: 'option 2', isCorrect: false },
-            { option: 'option 3', isCorrect: false },
-            { option: 'option 4', isCorrect: false }
+            { option: 'Roscommon', isCorrect: true },
+            { option: 'Meath', isCorrect: false },
+            { option: 'Laois', isCorrect: false },
+            { option: 'Cavan', isCorrect: false }
         ]
     },
     {
-        question: 'question 9',
+        question: 'Which river flows under Dublin Castle?',
         answer: [
-            { option: 'option 1', isCorrect: false },
-            { option: 'option 2', isCorrect: true },
-            { option: 'option 3', isCorrect: false },
-            { option: 'option 4', isCorrect: false }
+            { option: 'Boyle River', isCorrect: false },
+            { option: 'River Poddle', isCorrect: true },
+            { option: 'Annalee River', isCorrect: false },
+            { option: 'River Feale', isCorrect: false }
         ]
     },
     {
-        question: 'question 10',
+        question: 'Where in Ireland would you find Bangor Erris?',
         answer: [
-            {option: 'option 1', isCorrect: false},
-            {option: 'option 2', isCorrect: false},
-            {option: 'option 3', isCorrect: false},
-            {option: 'option 4', isCorrect: true} 
+            { option: 'Wicklow', isCorrect: false},
+            { option: 'Kildare', isCorrect: false},
+            { option: 'Tipperary', isCorrect: false},
+            { option: 'Mayo', isCorrect: true} 
         ]
     },
 ]
