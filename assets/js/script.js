@@ -1,7 +1,7 @@
 // Questions that will be asked
 let askQuestions = [
     {
-        question: 'Which famous river runs through Dublin?',
+        question: '1. Which famous river runs through Dublin?',
         answer: [
             { option: 'River Liffey', isCorrect: true },
             { option: 'River Boyne', isCorrect: false },
@@ -10,7 +10,7 @@ let askQuestions = [
         ]
     },
     {
-        question: 'What is the national symbol of Ireland?',
+        question: '2. What is the national symbol of Ireland?',
         answer: [
             { option: 'Pint of Guiness', isCorrect: false },
             { option: 'Shamrock', isCorrect: false },
@@ -19,7 +19,7 @@ let askQuestions = [
         ]
     },
     {
-        question: "In which county is the Giant's Causeway located?",
+        question: "3. In which county is the Giant's Causeway located?",
         answer: [
             { option: 'Tyrone', isCorrect: false },
             { option: 'Armagh', isCorrect: false },
@@ -28,7 +28,7 @@ let askQuestions = [
         ]
     },
     {
-        question: 'What is the largest county in Ireland?',
+        question: '4. What is the largest county in Ireland?',
         answer: [
             { option: 'Dublin', isCorrect: false },
             { option: 'Cork', isCorrect: true },
@@ -37,7 +37,7 @@ let askQuestions = [
         ]
     },
     {
-        question: 'What is the highest mountain in Ireland?',
+        question: '5. What is the highest mountain in Ireland?',
         answer: [
             { option: 'Croagh Patrick', isCorrect: false },
             { option: 'Knockmealdown', isCorrect: false },
@@ -46,7 +46,7 @@ let askQuestions = [
         ]
     },
     {
-        question: 'What is the smallest county in Ireland',
+        question: '6. What is the smallest county in Ireland',
         answer: [
             { option: 'Offaly', isCorrect: false },
             { option: 'Carlow', isCorrect: false },
@@ -55,7 +55,7 @@ let askQuestions = [
         ]
     },
     {
-        question: 'How many counties does County Tipperary border?',
+        question: '7. How many counties does County Tipperary border?',
         answer: [
             { option: 'Nine', isCorrect: false },
             { option: 'Seven', isCorrect: false },
@@ -64,7 +64,7 @@ let askQuestions = [
         ]
     },
     {
-        question: 'In Connacht, which county does not have a coastline?',
+        question: '8. In Connacht, which county does not have a coastline?',
         answer: [
             { option: 'Roscommon', isCorrect: true },
             { option: 'Meath', isCorrect: false },
@@ -73,7 +73,7 @@ let askQuestions = [
         ]
     },
     {
-        question: 'Which river flows under Dublin Castle?',
+        question: '9. Which river flows under Dublin Castle?',
         answer: [
             { option: 'Boyle River', isCorrect: false },
             { option: 'River Poddle', isCorrect: true },
@@ -82,7 +82,7 @@ let askQuestions = [
         ]
     },
     {
-        question: 'Where in Ireland would you find Bangor Erris?',
+        question: '10. Where in Ireland would you find Bangor Erris?',
         answer: [
             { option: 'Wicklow', isCorrect: false},
             { option: 'Kildare', isCorrect: false},
@@ -118,11 +118,11 @@ function loadQuiz() {
         inputChoices.type = 'radio';
         inputChoices.name = 'answer';
         inputChoices.value = i;
-        inputChoices.id = 'option' + (i + 1); // Assign unique IDs to the input fields
+        inputChoices.id = 'option' + (i + 1);
 
         let labelChoices = document.createElement('label');
         labelChoices.className = 'label-choices';
-        labelChoices.setAttribute('for', 'option' + (i + 1)); // Set the 'for' attribute
+        labelChoices.setAttribute('for', 'option' + (i + 1));
 
         labelChoices.textContent = askQuestions[currentQuestion].answer[i].option;
 
@@ -135,7 +135,8 @@ function loadQuiz() {
 
 function loadScore() {
     userScore.textContent =
-        `Well done on completing this quiz! Your score is ${score} out of ${askQuestions.length}!`;
+        `Well done on completing this quiz! Your score is ${score} out of 
+        ${askQuestions.length}!`;
 }
 
 function previousQuestion() {
@@ -176,12 +177,10 @@ function checkAnswers() {
         if (askQuestions[currentQuestion].answer[selectedAnswer].isCorrect) {
             score++;
         } 
-
         nextQuestion();
     } else {
-        alert('Please select an answer');
+        alert('Please answer all questions first');
     }
-
 }
 
 // Onclick events for buttons
