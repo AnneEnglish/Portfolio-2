@@ -53,6 +53,10 @@ body {
     background-color: #a1045a;
 }
 
+#restart {
+    background-color: #000;
+}
+
 #score {
     background-color: #fff;
     color: #a1045a;

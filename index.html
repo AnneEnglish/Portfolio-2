@@ -7,7 +7,9 @@
 
     <!--CSS Stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Quiz</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/images/quiz.webp">
+    <title>Quiz on Ireland</title>
   </head>
 
   <body>
@@ -27,6 +29,10 @@
 
         <!--Div for control buttons-->
         <div class="control-buttons">
+            <button id="restart" class="button"> 
+                <i class="fa-solid fa-arrow-rotate-left fa-2xl" 
+                style="color: #ffffff;"></i> Restart Quiz 
+            </button>
             <button id="previous" class="button">
                 <i class="fa-solid fa-left-long fa-2xl" style="color: #a1045a;">
                 </i> Previous
@@ -36,8 +42,9 @@
                 </i>
             </button>
             <button onclick="checkAnswers()" id="submit" class="button">
-                Submit Answers
-            </button>
+                Submit Answers <i class="fa-regular fa-square-check fa-2xl" 
+                style="color: #ffffff;"></i>
+            </button> 
         </div>
 
         <!--Div for score area-->
