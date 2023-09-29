@@ -7,17 +7,23 @@
     font-family: 'Quicksand', sans-serif;
 }
 
+h1 {
+    font-size: 18px;
+}
+
 body {
     background-color: #dac4f7;
     color: #000;
-    font-size: 18px;
+    font-size: 16px;
     height: 100%;
+    padding-left: 10px;
+    padding-right: 	10px;
 }
 
 .logo-img {
     opacity: 0.8;
-    width: 200px;
-    height: 150px;
+    width: 150px;
+    height: 100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -38,19 +44,19 @@ body {
 
 .options, 
 .question-content {
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 10px;
 }
 
 .control-buttons {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 
 .button {
     color: #fff;
     border: none;
     font-size: 16px;
-    padding: 10px;
+    padding: 5px;
 }
 
 #previous, 
@@ -62,11 +68,13 @@ body {
 #submit {
     background-color: #a1045a;
     width: 40%;
+    padding-bottom: 5px;
 }
 
 #restart {
     background-color: #000;
     width: 40%;
+    padding-bottom: 5px;
 }
 
 #score {
@@ -76,12 +84,27 @@ body {
 }
 
 @media screen and (min-width:550px) {
+    h1 {
+        font-size: 20px;
+    }
+    
     body {
         font-size: 18px;
+    }
+
+    .logo-img {
+        width: 200px;
+        height: 150px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
 
 @media screen and (min-width:700px) {
+    h1 {
+        font-size: 26px;
+    }
+    
     body {
         font-size: 24px;
     }
@@ -93,23 +116,32 @@ body {
     .logo-img {
         width: 300px;
         height: 200px;
-    }
-
-    .question-content {
         padding-top: 10px;
         padding-bottom: 10px;
     }
 
-    .options {
-        padding-top: 20px;
+    .question-content {
+        padding-top: 10px;
     }
 
-    .control-buttons {
-        padding-top: 15px;
+    .options {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #next,
+    #previous,
+    #restart,
+    #submit {
+        padding: 10px;
     }
 }
 
 @media screen and (min-width:900px) {
+    h1 {
+        font-size: 28px;
+    }
+    
     body {
         font-size: 26px;
     }
@@ -126,7 +158,6 @@ body {
     .logo-img {
         width: 300px;
         height: 200px;
-        padding-top: 10px;
     }
     
     .question-content {
@@ -137,16 +168,15 @@ body {
     .options {
         padding-top: 5px;
     }
-
-    .control-buttons {
-        padding-top: 0;
-        padding-bottom: 10px;
-    }
 }
 
 @media screen and (min-height:664px) {
+    h1 {
+        font-size: 26px;
+    }
+    
     body {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     input[type='radio'] {
@@ -155,18 +185,13 @@ body {
     }
 
     .button {
-        font-size: 18px;
-    }
-
-    .control-buttons {
-        padding-top: 10px;
+        font-size: 20px;
     }
 
     .logo-img {
         width: 300px;
         height: 200px;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 10px;
     }
 
     .question-content {
@@ -176,6 +201,10 @@ body {
 }
 
 @media screen and (min-height:1000px) {
+    h1 {
+        font-size: 36px;
+    }
+    
     body {
         font-size: 34px;
     }
@@ -189,15 +218,9 @@ body {
         font-size: 30px;
     }
 
-    .control-buttons {
-        padding-top: 30px;
-    }
-
     .logo-img {
         width: 450px;
         height: 350px;
-        padding-top: 30px;
-        padding-bottom: 30px;
     }
 
     .question-content {
@@ -210,7 +233,7 @@ body {
     .logo-img {
         width: 300px;
         height: 200px;
-        padding-bottom: 10px;
+        padding: 0;
     }
 
     input[type='radio'] {
@@ -225,6 +248,10 @@ body {
 }
 
 @media screen and (min-width:1200px) and (min-height:800px) {
+    h1 {
+        font-size: 34px;
+    }
+    
     body {
         font-size: 32px;
     }
@@ -232,25 +259,23 @@ body {
     .button {
         font-size: 28px;
     }
-
-    .control-buttons {
-        padding-top: 20px;
-    }
     
     .logo-img {
         width: 400px;
         height: 300px;
-        padding-bottom: 10px;
-        padding-top: 10px;
     }
 
     .question-content {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 }
 
 @media screen and (min-width:1400px) {
+    h1 {
+        font-size: 40px;
+    }
+    
     body {
         font-size: 38px;
     }
@@ -262,10 +287,6 @@ body {
 
     .button {
         font-size: 34px;
-    }
-
-    .control-buttons {
-        padding-top: 30px;
     }
 
     .logo-img {
