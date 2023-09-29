@@ -90,7 +90,7 @@ let askQuestions = [
             { option: 'Mayo', isCorrect: true} 
         ]
     },
-]
+];
 
 // Variables to represent buttons and content areas
 let previousButton = document.getElementById('previous');
@@ -237,7 +237,7 @@ function checkAnswers() {
     
         if (askQuestions[currentQuestion].answer[selectedAnswer].isCorrect) {
             if (!questionAnsweredCorrectly[currentQuestion]) {
-                score++
+                score++;
                 questionAnsweredCorrectly[currentQuestion] = true;
             }
         } else {
@@ -267,7 +267,7 @@ submitButton.addEventListener('click', function () {
     }
 });
 nextButton.addEventListener('click', nextQuestion);
-restartButton.addEventListener('click', restartQuiz)
+restartButton.addEventListener('click', restartQuiz);
 
 // Load the first question when the page loads
 loadQuiz();
