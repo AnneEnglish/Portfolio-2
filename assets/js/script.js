@@ -185,9 +185,13 @@ function displayNextQuestion() {
 
 function nextQuestion() {
     let selectedRadio = document.querySelector('input[name="answer"]:checked');
-    let selectedAnswer = parseInt(selectedRadio.value);
-    handleAnswer(selectedAnswer);
-    displayNextQuestion();
+    if (selectedRadio) {
+        let selectedAnswer = parseInt(selectedRadio.value);
+        handleAnswer(selectedAnswer);
+        displayNextQuestion();
+    } else {
+        alert('Please select an answer first');
+    }
 }
 
 /* Check if the answer is correct and update the score accordingly.

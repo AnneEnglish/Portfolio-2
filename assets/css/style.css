@@ -1,5 +1,5 @@
 /*Google Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Quicksand:wght@500&display=swap');
 
 * {
     margin: 0;
@@ -8,6 +8,7 @@
 }
 
 h1 {
+    font-family: 'Croissant One', serif;
     font-size: 18px;
 }
 
@@ -86,6 +87,21 @@ body {
     background-color: #fff;
     color: #a1045a;
     padding-left: 10px;
+}
+
+.div-choices:hover {
+    background-color: #4fce61;
+}
+
+/* The code below is from stack overflow */ 
+#previous:hover,
+#next:hover,
+#submit:hover {
+    background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+}
+
+#restart:hover {
+    background-color: #333333;
 }
 
 @media screen and (min-width:550px) {
