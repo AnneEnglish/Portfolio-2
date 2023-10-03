@@ -14,17 +14,13 @@ Deployed site: [Luck of the Irish](https://anneenglish.github.io/Portfolio-2/)
 ## Table of Contents
 
 - [User Experience](#user-experience)
+  - [Initial Discussion](#initial-discussion)
   - [User Stories](#user-stories)
-    - [Initial Discussion](#initial-discussion)
-    - [First Time Visitor Goals](#first-time-visitor-goals)
-    - [Returing Visitor Goals](#returing-visitor-goals)
-    - [Frequent Visitor Goals](#frequent-visitor-goals)
 - [Design](#design)
   - [Colour Scheme](#colour-scheme)
   - [Typography](#typography)
   - [Imagery](#imagery)
   - [Features](#features)
-    - [Future Implementations](#future-implementations)
   - [Accessibility](#accessibility)
 - [Technologies Used](#technologies-used)
   - [Languages Used](#languages-used)
@@ -32,8 +28,6 @@ Deployed site: [Luck of the Irish](https://anneenglish.github.io/Portfolio-2/)
 - [Deployment and Local Development](#deployment-and-local-development)
   - [Deployment(GitHub Pages)](#deploymentgithub-pages)
   - [Local Development](#local-development)
-    - [Forking the Github Repository](#forking-the-github-repository)
-    - [Making a Local Clone](#making-a-local-clone)
 - [Testing](#testing)
   - [Testing User Stories from UX Section](#testing-user-stories-from-ux-section)
   - [Further Testing](#further-testing)
@@ -48,25 +42,28 @@ Deployed site: [Luck of the Irish](https://anneenglish.github.io/Portfolio-2/)
 
 ## User Experience
 
-### User Stories
-
-#### Initial Discussion
+### Initial Discussion
 
 The Luck of the Irish is a website designed for the user to gain or test their
 knowledge of Ireland in a fun way, by using a quiz. We update our quiz questions
 weekly, for returning or frequent visitors so they can keep improving their
 knowledge.
 
+### User Stories
+
+<!-- omit in toc -->
 #### First Time Visitor Goals
 
 - I want to be able to improve my general knowledge of Ireland in a fun way.
 - I want the site to be easy to navigate.
 - I want to be able to view my score at the end of the quiz.
 
+<!-- omit in toc -->
 #### Returing Visitor Goals
 
 * I want to have different questions each time I visit so in order to learn more.
 
+<!-- omit in toc -->
 #### Frequent Visitor Goals
 
 * I want to keep improving my knowledge.
@@ -126,6 +123,7 @@ The website consists of one page (index.html). This page contains the following:
     questions first.
 - A footer which contains the text '*Our quiz is updated weekly!'.
 
+<!-- omit in toc -->
 #### Future Implementations
 
 In future implementations I would like to do the following:
@@ -196,6 +194,7 @@ The project was deployed to GitHub Pages using the following steps:
 
 ### Local Development
 
+<!-- omit in toc -->
 #### Forking the Github Repository
 
 Forking a GitHub repository is making a copy of the original on our account. We can view/edit without affecting the original repository. Follow the steps below to do this:
@@ -204,6 +203,7 @@ Forking a GitHub repository is making a copy of the original on our account. We 
 2. Locate and click on the GitHub Repository for the project you want to fork.
 3. Just below the 'settings' for the repository you will see 'fork'. Click on it and you should now have a copy of the original repository on your GitHub account.
 
+<!-- omit in toc -->
 #### Making a Local Clone
 
 1. Log into [Github](https://github.com/)
