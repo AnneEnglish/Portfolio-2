@@ -30,6 +30,9 @@ Deployed site: [Luck of the Irish](https://anneenglish.github.io/Portfolio-2/)
   - [Local Development](#local-development)
 - [Testing](#testing)
   - [Testing User Stories from UX Section](#testing-user-stories-from-ux-section)
+    - [First Time Visitor Goals](#first-time-visitor-goals-1)
+    - [Returning Visitor Goals](#returning-visitor-goals)
+    - [Frequent Visitor Goals](#frequent-visitor-goals-1)
   - [Further Testing](#further-testing)
   - [Known Bugs](#known-bugs)
 - [Credits](#credits)
@@ -61,12 +64,12 @@ knowledge.
 <!-- omit in toc -->
 #### Returing Visitor Goals
 
-* I want to have different questions each time I visit so in order to learn more.
+- I want to have different questions each time I visit so in order to learn more.
 
 <!-- omit in toc -->
 #### Frequent Visitor Goals
 
-* I want to keep improving my knowledge.
+- I want to keep improving my knowledge.
 
 ## Design
 
@@ -82,7 +85,7 @@ In my style.css file I used variables to declare the colours above.
 This is how I used the colours for my site:
 
 - Body background colour: #DAC4F7
-- Previous and next button background colour: #2C9A7B
+- Previous and next button background colour: #237B62
 - Restart background colour: #000000
 - Submit background colour: #A1045A
 - H1, paragraph and question content area text colour: #000000
@@ -168,7 +171,7 @@ HTML, CSS and Javascript.
 6. [Google Fonts:](https://fonts.google.com/): Google Fonts was used to import
    the 'Croissant One' and 'Quicksand' fonts used throughout website page by
    importing them into the style.css file.
-8. [Font Awesome:](https://fontawesome.com/): Font Awesome was used for the
+7. [Font Awesome:](https://fontawesome.com/): Font Awesome was used for the
    website to add icons for the buttons. It was also used for aesthetic and UX.
 
 ## Deployment and Local Development
@@ -197,11 +200,14 @@ The project was deployed to GitHub Pages using the following steps:
 <!-- omit in toc -->
 #### Forking the Github Repository
 
-Forking a GitHub repository is making a copy of the original on our account. We can view/edit without affecting the original repository. Follow the steps below to do this:
+Forking a GitHub repository is making a copy of the original on our account.
+We can view/edit without affecting the original repository. Follow the steps
+below to do this:
 
 1. Log into [Github](https://github.com/)
 2. Locate and click on the GitHub Repository for the project you want to fork.
-3. Just below the 'settings' for the repository you will see 'fork'. Click on it and you should now have a copy of the original repository on your GitHub account.
+3. Just below the 'settings' for the repository you will see 'fork'. Click on it
+   and you should have a copy of the original repository on your GitHub account.
 
 <!-- omit in toc -->
 #### Making a Local Clone
@@ -220,9 +226,75 @@ Forking a GitHub repository is making a copy of the original on our account. We 
 
 ## Testing
 
+I tested the website constantly when making changes or adding things to it using
+Chrome Dev Tools. It was also used to locate where the problems were in the code.
+
+Some of the issues I was having were:
+
+- When you answered all the questions on the quiz and clicked the submit button
+  it would give you your score like it should, but if you clicked it a second
+  time it would then double the score. E.g. 9/10 and when you click submit again
+  it would be 18/10 and so on.
+- When using the previous button, the questions you had answered were still being
+  added to the score rather than clearing when using the previous button. E.g.
+  if you were on question 9 out of 10 and used the previous button to go back to
+  question 7 answer it then went to question 8 and answered it correctly again,
+  it would be added to your score a second time. This resulted in an incorrect
+  score such as 12/10.
+- When using the restart button the previous and next buttons would stay hidden.
+
+The [WC3 Markup Validator](https://validator.w3.org/),
+[WC3 CSS Validator](https://jigsaw.w3.org/css-validator/validator.html.en) and
+[JSHint](https://jshint.com/) were used to validate the website and to ensure
+there were no errors. It passed for all of those.
+
 ### Testing User Stories from UX Section
 
+#### First Time Visitor Goals
+
+- I want to be able to improve my general knowledge of Ireland in a fun way.
+  - The quiz provides the user with a question and four options to choose from.
+    Through answering the questions the user gains knowledge in a fun way.
+- I want the site to be easy to navigate.
+  - All content provided on the page is clear to the user. The buttons are also
+    different colours and spaced evenly so that the user can differentiate
+    between all of them.
+- I want to be able to view my score at the end of the quiz.
+  - Once the user has answered all the questions they can click the submit button
+    and their score will display.
+
+#### Returning Visitor Goals
+
+- I want to have different questions each time I visit so in order to learn more.
+  - We have a footer at the end of our page that states we update our quiz every
+    Monday. So if a user was to visit our site on a Wednesday they could come back
+    the following Monday for the updated quiz.
+
+#### Frequent Visitor Goals
+
+- I want to keep improving my knowledge.
+  - The user can keep improving their knowledge by visiting our site weekly.
+    Hopefully with future implementations the user won't have to wait weekly.
+
 ### Further Testing
+
+- The website was tested on a range of web browsers and responded well. Some of
+the browsers it was tested on were:
+  - Chrome
+  - Safari
+  - Microsoft Edge
+
+- The website was viewed on a range of devices such as:
+  - iPhone 13
+  - Samsung Galaxy s10e
+  - Samsung Galaxy A70
+  - iPhone 11
+  - HP Stream 14s
+  - Apple MacBook Pro
+  - Samsung Galaxy Tab A8
+
+- I asked family and friends to view the website and complete the quiz. A couple
+of bugs outlined above were found through doing this.
 
 ### Known Bugs
 

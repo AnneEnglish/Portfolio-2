@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 // Questions that will be asked
 let askQuestions = [
     {

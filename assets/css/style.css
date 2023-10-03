@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Quicksand:wght@500&display=swap');
 
 * {
+    font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Quicksand', sans-serif;
 }
 
 h1 {
@@ -97,7 +97,7 @@ body {
 #previous:hover,
 #next:hover,
 #submit:hover {
-    background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
 }
 
 #restart:hover {
