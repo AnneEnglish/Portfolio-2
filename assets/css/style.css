@@ -27,11 +27,12 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.container {
+.container,
+.footer {
     letter-spacing: 1px;
     text-align: center;
 }
@@ -42,13 +43,17 @@ body {
     text-align: left;
 }
 
-.options, 
+.options {
+    padding-top: 5px;
+}
+
 .question-content {
-    padding-top: 15px;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.control-buttons {
+.control-buttons,
+.footer {
     padding-bottom: 10px;
 }
 
@@ -219,8 +224,8 @@ body {
     }
 
     .logo-img {
-        width: 450px;
-        height: 350px;
+        width: 400px;
+        height: 300px;
     }
 
     .question-content {
@@ -230,6 +235,14 @@ body {
 }
 
 @media screen and (min-width:1200px) and (min-height:600px) {
+    body {
+        font-size: 24px;
+    }
+    
+    .buttons {
+        font-size: 20px;
+    }
+
     .logo-img {
         width: 300px;
         height: 200px;
@@ -242,9 +255,15 @@ body {
     }
 
     .question-content {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
+
+    .options {
+        padding-top: 5px;
+        padding-bottom: 0;
+    }
+    
 }
 
 @media screen and (min-width:1200px) and (min-height:800px) {
@@ -261,8 +280,8 @@ body {
     }
     
     .logo-img {
-        width: 400px;
-        height: 300px;
+        width: 380px;
+        height: 280px;
     }
 
     .question-content {
