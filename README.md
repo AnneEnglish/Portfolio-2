@@ -4,7 +4,7 @@
 The Luck of the Irish Quiz is so the user can learn in a fun way or just to test
 their general knowledge about Ireland.
 
-![Luck of the Irish show on a range of screens](assets/images/responsive-quiz.webp)
+![Luck of the Irish show on a range of screens](assets/images/am-i-responsive.webp)
 
 Deployed site: [Luck of the Irish](https://anneenglish.github.io/Portfolio-2/)
 
@@ -15,8 +15,10 @@ Deployed site: [Luck of the Irish](https://anneenglish.github.io/Portfolio-2/)
 
 - [User Experience](#user-experience)
   - [User Stories](#user-stories)
+    - [Initial Discussion](#initial-discussion)
     - [First Time Visitor Goals](#first-time-visitor-goals)
     - [Returing Visitor Goals](#returing-visitor-goals)
+    - [Frequent Visitor Goals](#frequent-visitor-goals)
 - [Design](#design)
   - [Colour Scheme](#colour-scheme)
   - [Typography](#typography)
@@ -45,6 +47,13 @@ Deployed site: [Luck of the Irish](https://anneenglish.github.io/Portfolio-2/)
 
 ### User Stories
 
+#### Initial Discussion
+
+The Luck of the Irish is a website designed for the user to gain or test their
+knowledge of Ireland in a fun way, by using a quiz. We update our quiz questions
+weekly, for returning or frequent visitors so they can keep improving their
+knowledge.
+
 #### First Time Visitor Goals
 
 - I want to be able to improve my general knowledge of Ireland in a fun way.
@@ -53,11 +62,20 @@ Deployed site: [Luck of the Irish](https://anneenglish.github.io/Portfolio-2/)
 
 #### Returing Visitor Goals
 
+* I want to have different questions each time I visit so in order to learn more.
 
+#### Frequent Visitor Goals
+
+* I want to keep improving my knowledge.
 
 ## Design
 
 ### Colour Scheme
+
+The colour scheme for the website was created by me, not using a colour palette
+generator. I chose these colours as I felt 
+
+![Luck of the Irish Color Scheme](assets/images/colour-scheme.webp)
 
 ### Typography
 
