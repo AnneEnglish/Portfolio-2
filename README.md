@@ -73,7 +73,7 @@ knowledge.
 ### Colour Scheme
 
 The colour scheme for the website was created by me, not using a colour palette
-generator. I chose these colours as I felt thyy tied in well with the theme of
+generator. I chose these colours as I felt they tied in well with the theme of
 the quiz.
 
 ![Luck of the Irish Color Scheme](assets/images/colour-scheme.webp)
