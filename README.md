@@ -30,9 +30,6 @@ Deployed site: [Luck of the Irish](https://anneenglish.github.io/Portfolio-2/)
   - [Local Development](#local-development)
 - [Testing](#testing)
   - [Testing User Stories from UX Section](#testing-user-stories-from-ux-section)
-    - [First Time Visitor Goals](#first-time-visitor-goals-1)
-    - [Returning Visitor Goals](#returning-visitor-goals)
-    - [Frequent Visitor Goals](#frequent-visitor-goals-1)
   - [Further Testing](#further-testing)
   - [Known Bugs](#known-bugs)
 - [Credits](#credits)
@@ -250,6 +247,7 @@ there were no errors. It passed for all of those.
 
 ### Testing User Stories from UX Section
 
+<!-- omit in toc -->
 #### First Time Visitor Goals
 
 - I want to be able to improve my general knowledge of Ireland in a fun way.
@@ -263,6 +261,7 @@ there were no errors. It passed for all of those.
   - Once the user has answered all the questions they can click the submit button
     and their score will display.
 
+<!-- omit in toc -->
 #### Returning Visitor Goals
 
 - I want to have different questions each time I visit so in order to learn more.
@@ -270,6 +269,7 @@ there were no errors. It passed for all of those.
     Monday. So if a user was to visit our site on a Wednesday they could come back
     the following Monday for the updated quiz.
 
+<!-- omit in toc -->
 #### Frequent Visitor Goals
 
 - I want to keep improving my knowledge.
