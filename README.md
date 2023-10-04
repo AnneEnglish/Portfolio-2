@@ -59,9 +59,9 @@ knowledge.
 - I want to be able to view my score at the end of the quiz.
 
 <!-- omit in toc -->
-#### Returing Visitor Goals
+#### Returning Visitor Goals
 
-- I want to have different questions each time I visit so in order to learn more.
+- I want to have different questions each time I visit in order to learn more.
 
 <!-- omit in toc -->
 #### Frequent Visitor Goals
@@ -157,18 +157,18 @@ HTML, CSS and Javascript.
 ### Libraries and Programs Used
 
 1. [Git](https://git-scm.com/): For version control.
-2. [Github:](https://github.com/): GitHub was used to store and save the
+2. [Github](https://github.com/): GitHub was used to store and save the
    projects code after being pushed from Git.
-3. [Chrome DevTools:](https://developer.chrome.com/docs/devtools/): Chrome
+3. [Chrome DevTools](https://developer.chrome.com/docs/devtools/): Chrome
    DevTools was used to test features and fix styling and responsiveness issues.
-4. [Online Convert:](https://www.online-convert.com/): Online Convert was used
+4. [Online Convert](https://www.online-convert.com/): Online Convert was used
    to convert images to WEBP for faster loading times on the site.
 5. [Am I Responsive?](http://ami.responsivedesign.is/): Am I Responsive was used
    to show the responsiveness of the website on a range of devices.
-6. [Google Fonts:](https://fonts.google.com/): Google Fonts was used to import
+6. [Google Fonts](https://fonts.google.com/): Google Fonts was used to import
    the 'Croissant One' and 'Quicksand' fonts used throughout website page by
    importing them into the style.css file.
-7. [Font Awesome:](https://fontawesome.com/): Font Awesome was used for the
+7. [Font Awesome](https://fontawesome.com/): Font Awesome was used for the
    website to add icons for the buttons. It was also used for aesthetic and UX.
 
 ## Deployment and Local Development
@@ -233,11 +233,10 @@ Some of the issues I was having were:
   time it would then double the score. E.g. 9/10 and when you click submit again
   it would be 18/10 and so on.
 - When using the previous button, the questions you had answered were still being
-  added to the score rather than clearing when using the previous button. E.g.
-  if you were on question 9 out of 10 and used the previous button to go back to
-  question 7 answer it then went to question 8 and answered it correctly again,
-  it would be added to your score a second time. This resulted in an incorrect
-  score such as 12/10.
+  added to the score rather than clearing. E.g. if you were on question 9 out of
+  10 and used the previous button to go back to question 7 answer it then went
+  to question 8 and answered it correctly again, it would be added to your score
+  a second time. This resulted in an incorrect score such as 12/10.
 - When using the restart button the previous and next buttons would stay hidden.
 
 The [WC3 Markup Validator](https://validator.w3.org/),
@@ -308,7 +307,7 @@ I have set for the images do not fit with the original.
 
 For my CSS file, on line 97 to 101 the code is from
 [Stack Overflow](https://stackoverflow.com/questions/65297617/how-to-make-an-elements-background-color-a-little-darker-using-css) as I didn't
-want to have to change the colour of those elements background colour t make
+want to have to change the colour of those elements background colour to make
 them darker. If you click on "Stack Overflow" above it will take you to the
 question forum where I got those line of code from.
 
@@ -322,9 +321,9 @@ were written by myself.
 
 ### Media
 
-- The
-  [Shamrock](https://www.google.com/search?q=irish+logo+png&tbm=isch&hl=en-GB&sa=X&ved=2ahUKEwiw1Y-B78iBAxUmY0EAHYvMAzIQrNwCKAB6BQgBEKsB&biw=1263&bih=563#imgrc=VL3YLy7svMIfvM)
-  logo image and favicon is from Google images, which displays the image from
+- The Shamrock logo image and favicon is from
+  [Google Images](https://www.google.com/search?q=irish+logo+png&tbm=isch&hl=en-GB&sa=X&ved=2ahUKEwiw1Y-B78iBAxUmY0EAHYvMAzIQrNwCKAB6BQgBEKsB&biw=1263&bih=563#imgrc=VL3YLy7svMIfvM)
+  ,which displays the image from
   [Seek Logo](https://seeklogo.com/vector-logo/255211/shamrock-irish).
 
 - The image above with the site shown on a range of devices is a screenshot from
@@ -345,4 +344,4 @@ I would like to acknowledge the following people:
 - My family and friends for testing the quiz and dealing with me being frustrated
   when trying to debug and see what was causing the errors.
 - The Code Institute Slack channel for their knowledge on Javascript loops when
-  I was trying to get a better understanding for how they worked.
+  I was trying to get a better understanding of how they worked.
