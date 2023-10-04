@@ -86,10 +86,10 @@ let askQuestions = [
     {
         question: '10. Where in Ireland would you find Bangor Erris?',
         answer: [
-            { option: 'Wicklow', isCorrect: false},
-            { option: 'Kildare', isCorrect: false},
-            { option: 'Tipperary', isCorrect: false},
-            { option: 'Mayo', isCorrect: true} 
+            { option: 'Wicklow', isCorrect: false },
+            { option: 'Kildare', isCorrect: false },
+            { option: 'Tipperary', isCorrect: false },
+            { option: 'Mayo', isCorrect: true }
         ]
     },
 ];
@@ -120,8 +120,6 @@ function loadQuiz() {
     questionText.innerHTML = askQuestions[currentQuestion].question;
     optionsArea.innerHTML = '';
 
-    /* For loop to iterate over the options while creating HTML elements
-    for each option and also appending them to the optionsArea element */
     for (let i = 0; i < askQuestions[currentQuestion].answer.length; i++) {
         let divChoices = document.createElement('div');
         divChoices.className = 'div-choices';
@@ -144,12 +142,20 @@ function loadQuiz() {
 
         optionsArea.appendChild(divChoices);
     }
+
+    // Check if this is the last question and hide the "Next" button
+    if (currentQuestion === askQuestions.length - 1) {
+        nextButton.style.display = 'none';
+    } else {
+        nextButton.style.display = 'inline-block';
+    }
 }
+
 
 /* Display user's score after completing the quiz, update userScore text with 
 score*/
 function loadScore() {
-    userScore.textContent =`Well done on completing this quiz! Your score is 
+    userScore.textContent = `Well done on completing this quiz! Your score is 
     ${score} out of ${askQuestions.length}!`;
 }
 
@@ -237,10 +243,10 @@ function restartQuiz() {
 answered and calculate final score*/
 function checkAnswers() {
     let selectedRadio = document.querySelector('input[name="answer"]:checked');
-    
+
     if (selectedRadio) {
         let selectedAnswer = parseInt(selectedRadio.value);
-    
+
         if (askQuestions[currentQuestion].answer[selectedAnswer].isCorrect) {
             if (!questionAnsweredCorrectly[currentQuestion]) {
                 score++;
@@ -248,7 +254,7 @@ function checkAnswers() {
             }
         } else {
             questionAnsweredCorrectly[currentQuestion] = false;
-        } 
+        }
 
         loadScore();
 

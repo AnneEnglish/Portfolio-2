@@ -298,6 +298,8 @@ of bugs outlined above were found through doing this.
 
 ### Known Bugs
 
+As of now there are no bugs that I am aware of even after continuous 
+
 ## Credits
 
 ### Code
