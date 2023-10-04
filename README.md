@@ -140,6 +140,7 @@ I have been very mindful when creating this website to make sure that it is
 accessible for all users by doing the following:
 
 - Using semantic HTML.
+- All of my buttons have an aria label.
 - When hovering over an option the background colour changes to #4FCE61 which
   highlights the fact they are hovering over it.
 - When hovering over any button (except restart) the background colour gets
