@@ -298,14 +298,51 @@ of bugs outlined above were found through doing this.
 
 ### Known Bugs
 
-As of now there are no bugs that I am aware of even after continuous 
+When testing through Chrome Dev Tools Lighthouse the best practices is scoring
+at 83 due to displaying images with incorrect aspect ratio as the width and height
+I have set for the images do not fit with the original.
 
 ## Credits
 
 ### Code
 
+For my CSS file, on line 97 to 101 the code is from
+[Stack Overflow](https://stackoverflow.com/questions/65297617/how-to-make-an-elements-background-color-a-little-darker-using-css) as I didn't
+want to have to change the colour of those elements background colour t make
+them darker. If you click on "Stack Overflow" above it will take you to the
+question forum where I got those line of code from.
+
 ### Content
+
+All questions for my site are from
+[Quiz Global](https://quizglobal.com/quizplay/quizplayqanda/Irish%20Table%20Quiz%20Questions%20and%20Answers) and
+[Hobby Lark](https://hobbylark.com/party-games/Fun-Trivia-Quiz-about-Ireland-with-Answers).
+All other content for the site, such as the welcome message and alert messages
+were written by myself.
 
 ### Media
 
+- The
+  [Shamrock](https://www.google.com/search?q=irish+logo+png&tbm=isch&hl=en-GB&sa=X&ved=2ahUKEwiw1Y-B78iBAxUmY0EAHYvMAzIQrNwCKAB6BQgBEKsB&biw=1263&bih=563#imgrc=VL3YLy7svMIfvM)
+  logo image and favicon is from Google images, which displays the image from
+  [Seek Logo](https://seeklogo.com/vector-logo/255211/shamrock-irish).
+
+- The image above with the site shown on a range of devices is a screenshot from
+  [Am I Responsive?](https://ui.dev/amiresponsive) which you can use to see how
+  your website looks on a range of devices.
+
+- The colour scheme image is a screenshot from
+  [Art in Context](https://artincontext.org/) where you can input your colour
+  values and it will show you them side by side.
+
+- The images mentioned above were then converted to WEBP using
+  [Online Convert](https://www.online-convert.com/).
+
 ### Acknowledgements
+
+I would like to acknowledge the following people:
+
+- My family and friends for testing the quiz and dealing with me being frustrated
+  when trying to debug and see what was causing the errors.
+- The Code Institute Slack channel for their knowledge on Javascript loops when
+  I was trying to get a better understanding for how they worked.
